@@ -33,6 +33,8 @@ body {
     display: none;
   }
   
+
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -90,3 +92,19 @@ body {
     font-size: 36px;
     margin-left: 50px;
   }
+
+  .icon {
+    display: none;
+  }
+
+  .Footer{
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    width: 99%;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 2Opx;  
+    }
