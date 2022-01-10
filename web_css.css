@@ -1,110 +1,275 @@
+.Uvod {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	width: 100%;
+}
+
 /*----------------Topbar----------------*/
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-  
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
 
+.topnav {
+	width: 100%;
+	top: 0;
+	position: fixed;
+	overflow: hidden;
+	background-color: #353535;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
 
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+.topnav a {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	margin: 0px;
+	width: 40px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #04AA6D;
+	color: white;
+}
+
+.topnav .icon {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.MainContent {
+		width: 100%;
+	}
+
+	.SideContent {
+		width: 100%;
+	}
+
+	p.text {
+		display: none;
+	}
+
+	p.red {
+		display: none;
+	}
+
+	#scm {
+		width: 40%;
+	}
+
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
+
+.obsah {
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+}
 
 /*----------------Sidebar----------------*/
-
 .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0) 100%);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-      color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: grey;
-  }
-  
-  .sidebar .closebutton {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, #353535 0%, rgba(53, 53, 53, 0.502696) 50%, rgba(53, 53, 53, 0) 100%);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
 
-  .icon {
-    display: none;
-  }
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
 
-  .Footer{
-    font-size: 15px;
-    text-align: center;
-    margin: auto;
-    width: 99%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 2Opx;  
-    }
+.sidebar a:hover {
+	color: grey;
+}
+
+.sidebar .closebutton {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+.icon {
+	display: none;
+}
+
+/*----------------Footer----------------*/
+.Footer {
+	font-size: 15px;
+	text-align: center;
+	margin: 0;
+	width: 100%;
+	background-color: #353535;
+	color: white;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 2Opx;
+}
+
+/*----------------Sipka----------------*/
+#sipka {
+	position: fixed;
+	bottom: 15px;
+	right: 25px;
+	display: none;
+}
+
+#sipka a {
+	font-size: 40px;
+}
+
+#sipka a:hover {
+	color: black;
+	font-size: 50px;
+}
+
+/*----------------Content----------------*/
+.Content {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.contentText {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 10;
+	list-style: none;
+}
+
+/*----------------Galerie----------------*/
+.ContentGalerie {
+	background-color: #353535;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-height: 500px;
+  /*margin: auto;*/
+	padding-top: 10px;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+}
+
+.contentTextGalerie {
+	color: white;
+}
+
+div.gallery {
+	border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
