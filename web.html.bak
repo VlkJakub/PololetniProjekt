@@ -60,21 +60,21 @@
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="obrazek2.png">
+    <a target="_blank" href="obrazek1.png">
       <img src="obrazek2.png" alt="Cinque Terre" width="600" height="400">
     </a>
   </div>
 </div>
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="obrazek3.png">
+    <a target="_blank" href="obrazek1.png">
       <img src="obrazek3.png" alt="Cinque Terre" width="600" height="400">
     </a>
   </div>
 </div>
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="obrazek4.png">
+    <a target="_blank" href="obrazek1.png">
       <img src="obrazek4.png" alt="Cinque Terre" width="600" height="400">
     </a>
   </div>
@@ -105,13 +105,14 @@
     <a href="#top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
    </div>
 
-   <div class="ikonky"><p><img src="logo.png" style="margin:5px;width:55px;"></p>
-
-<p ><i class="fab fa-instagram"style="width:35px;height:35px;font-size:22px;color:white;"></i> <i class="fab fa-facebook-f"style="width:35px;height:35px;font-size:22px;color:white;"></i><i class="fab fa-youtube"style="height:35px;font-size:22px;color:white;"></i> </p></div>
+<p><img src="logo.png" style="margin:5px;width:55px;"></p>
+</div>
+<p ><i class="fab fa-instagram"style="width:35px;height:35px;font-size:22px;color:white;"></i> <i class="fab fa-facebook-f"style="width:35px;height:35px;font-size:22px;color:white;"></i><i class="fab fa-youtube"style="height:35px;font-size:22px;color:white;"></i> </p>
+<i  id  ="center" class="fab fa-instagram"></i>
 
 
 </div>
-
+</div>
 	 
 <script>
 </script>

@@ -57,13 +57,27 @@ body {
 
 
 @media screen and (max-width: 700px) {
-	.Content {
+	.MainContent {
 		width: 100%;
 	}
 
-	.ContentGalerie {
+	.SideContent {
 		width: 100%;
 	}
+
+	p.text {
+		display: none;
+	}
+
+	p.red {
+		display: none;
+	}
+
+	#scm {
+		width: 40%;
+	}
+
+	
 	
 	.topnav a {
 	width: 80%;
@@ -71,7 +85,7 @@ body {
 	padding: 10px;	
 }
 .test{
-	padding-top: 300px;
+	padding-top: 100px;
 }
 	
 }
@@ -118,11 +132,11 @@ body {
 }
 
 @media screen and (max-height: 450px) {
-	.sidebar {
+	.sidenav {
 		padding-top: 15px;
 	}
 
-	.sidebar a {
+	.sidenav a {
 		font-size: 18px;
 	}
 }
@@ -245,8 +259,4 @@ div.gallery img {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-.ikonky{
-	text-align: center;
 }
